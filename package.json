@@ -7,7 +7,9 @@
     "build": "tsc -p .",
     "start": "node ./build/app.js",
     "dev": "nodemon ./app.ts",
-    "test": "jest"
+    "test": "jest",
+    "lint":"npx @biomejs/biome lint --write ./app.ts",
+    "lint-unsafe":"npx @biomejs/biome lint --write --unsafe ./app.ts"
   },
   "keywords": [],
   "author": "",
